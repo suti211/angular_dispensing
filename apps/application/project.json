@@ -1,25 +1,25 @@
 {
-  "name": "angular-dispensing",
+  "name": "application",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "angular-dispensing",
-  "sourceRoot": "apps/angular-dispensing/src",
-  "tags": [],
+  "sourceRoot": "apps/application/src",
+  "tags": ["scope:application"],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/angular-dispensing",
-        "index": "apps/angular-dispensing/src/index.html",
-        "main": "apps/angular-dispensing/src/main.ts",
+        "outputPath": "dist/apps/application",
+        "index": "apps/application/src/index.html",
+        "main": "apps/application/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/angular-dispensing/tsconfig.app.json",
+        "tsConfig": "apps/application/tsconfig.app.json",
         "assets": [
-          "apps/angular-dispensing/src/favicon.ico",
-          "apps/angular-dispensing/src/assets"
+          "apps/application/src/favicon.ico",
+          "apps/application/src/assets"
         ],
-        "styles": ["apps/angular-dispensing/src/styles.css"],
+        "styles": ["apps/application/src/styles.css"],
         "scripts": []
       },
       "configurations": {
@@ -53,10 +53,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "angular-dispensing:build:production"
+          "browserTarget": "application:build:production"
         },
         "development": {
-          "browserTarget": "angular-dispensing:build:development"
+          "browserTarget": "application:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -64,7 +64,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "angular-dispensing:build"
+        "browserTarget": "application:build"
       }
     },
     "lint": {
@@ -72,8 +72,8 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "apps/angular-dispensing/**/*.ts",
-          "apps/angular-dispensing/**/*.html"
+          "apps/application/**/*.ts",
+          "apps/application/**/*.html"
         ]
       }
     },
@@ -81,7 +81,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/angular-dispensing/jest.config.ts",
+        "jestConfig": "apps/application/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -94,7 +94,7 @@
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "angular-dispensing:build"
+        "buildTarget": "application:build"
       }
     }
   }

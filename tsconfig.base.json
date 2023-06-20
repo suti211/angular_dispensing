@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@angular-dispensing/business": ["libs/business/src/index.ts"],
+      "@angular-dispensing/ui": ["libs/ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
