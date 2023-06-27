@@ -1,5 +1,5 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { UiTableHeaderComponent } from './ui-table-header.component';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
+import {UiTableHeaderComponent} from './ui-table-header.component';
 
 describe('UiTableHeaderComponent', () => {
   let component: UiTableHeaderComponent;

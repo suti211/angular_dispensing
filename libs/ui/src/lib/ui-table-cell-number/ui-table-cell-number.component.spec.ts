@@ -1,5 +1,5 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { UiTableCellNumberComponent } from './ui-table-cell-number.component';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
+import {UiTableCellNumberComponent} from './ui-table-cell-number.component';
 
 describe('UiTableCellNumberComponent', () => {
   let component: UiTableCellNumberComponent;

@@ -1,5 +1,5 @@
-import { Meta } from '@storybook/angular';
-import { UiTableRowHeaderComponent } from './ui-table-row-header.component';
+import {Meta} from '@storybook/angular';
+import {UiTableRowHeaderComponent} from './ui-table-row-header.component';
 
 export default {
   title: 'UiTableRowHeaderComponent',
@@ -9,6 +9,7 @@ export default {
 export const Primary = {
   render: (args: UiTableRowHeaderComponent) => ({
     props: args,
+    template: `<angular-dispensing-ui-table-row-header>Measured</angular-dispensing-ui-table-row-header>`
   }),
   args: {},
 };

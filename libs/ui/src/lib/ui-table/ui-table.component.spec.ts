@@ -1,5 +1,5 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { UiTableComponent } from './ui-table.component';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
+import {UiTableComponent} from './ui-table.component';
 
 describe('UiTableComponent', () => {
   let component: UiTableComponent;

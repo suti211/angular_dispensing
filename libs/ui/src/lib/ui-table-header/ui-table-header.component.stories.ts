@@ -1,5 +1,5 @@
-import { Meta } from '@storybook/angular';
-import { UiTableHeaderComponent } from './ui-table-header.component';
+import {Meta} from '@storybook/angular';
+import {UiTableHeaderComponent} from './ui-table-header.component';
 
 export default {
   title: 'UiTableHeaderComponent',
@@ -9,6 +9,9 @@ export default {
 export const Primary = {
   render: (args: UiTableHeaderComponent) => ({
     props: args,
+    template: `<angular-dispensing-ui-table-header>
+                    Sphere
+                </angular-dispensing-ui-table-header>`,
   }),
   args: {},
 };
