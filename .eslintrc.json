@@ -32,7 +32,13 @@
     {
       "files": ["*.ts", "*.tsx"],
       "extends": ["plugin:@nx/typescript"],
-      "rules": {}
+      "rules": {
+        "object-curly-spacing": "error",
+        "quotes": [2, "single", {
+          "avoidEscape":  true,
+          "allowTemplateLiterals": true
+        }]
+      }
     },
     {
       "files": ["*.js", "*.jsx"],

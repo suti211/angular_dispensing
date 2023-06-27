@@ -1,0 +1,10 @@
+:host {
+  background: rgb(237, 242, 247);
+  border: solid 1px rgb(193, 203, 217);
+  color: rgb(98, 108, 122);
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  display: block;
+}
