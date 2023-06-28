@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@angular-dispensing/business": ["libs/business/src/index.ts"],
+      "@angular-dispensing/state": ["libs/state/src/index.ts"],
       "@angular-dispensing/ui": ["libs/ui/src/index.ts"]
     }
   },
