@@ -1,5 +1,5 @@
 import {RefractionValues} from './refraction-values';
-import {OrderDetail} from './order-detail';
+import {OrderDetails} from './order-detail';
 
 export type ReviewId = string;
 export type LensPairId = string;
@@ -19,7 +19,7 @@ export type Review = Readonly<{
 
   rightOrderedValues: Readonly<RefractionValues>;
 
-  orderAttributes: Readonly<OrderDetail>;
+  orderAttributes: Readonly<OrderDetails>;
 
   status: ReviewStatus;
 

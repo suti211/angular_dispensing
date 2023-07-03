@@ -1,0 +1,102 @@
+<h1>{{ -12.895 | formatWithSign | formatWithMeasurementUnit: 'DEGREES' }}</h1>
+<h1>{{ 0 | formatWithSign | formatWithMeasurementUnit: 'DEGREES' }}</h1>
+<h1>{{ 90.52 | formatWithSign | formatWithMeasurementUnit: 'DEGREES' }}</h1>
+
+<div style="display:grid; grid-template-columns: 1fr 1fr 1fr">
+  <angular-dispensing-ui-table-header>SPHERE</angular-dispensing-ui-table-header>
+  <angular-dispensing-ui-table-header>CYLINDER</angular-dispensing-ui-table-header>
+  <angular-dispensing-ui-table-header>AXIS</angular-dispensing-ui-table-header>
+
+  <div>0</div>
+  <div>0</div>
+  <div>0</div>
+</div>
+
+<br><br><br>
+<hr>
+<br><br><br>
+
+<div style="display:grid; grid-template-columns: 1fr 1fr 1fr">
+  <div>SPHERE</div>
+  <div>CYLINDER</div>
+  <div>AXIS</div>
+  <angular-dispensing-ui-table-cell-number>0</angular-dispensing-ui-table-cell-number>
+  <angular-dispensing-ui-table-cell-number>0</angular-dispensing-ui-table-cell-number>
+  <angular-dispensing-ui-table-cell-number>0</angular-dispensing-ui-table-cell-number>
+</div>
+
+<br><br><br>
+<hr>
+<br><br><br>
+
+<div style="display:grid; grid-template-columns: 1fr 1fr 1fr 1fr">
+  <div></div>
+  <div>SPHERE</div>
+  <div>CYLINDER</div>
+  <div>AXIS</div>
+
+  <angular-dispensing-ui-table-row-header>Ordered</angular-dispensing-ui-table-row-header>
+  <div>0</div>
+  <div>0</div>
+  <div>0</div>
+</div>
+
+
+<br><br><br>
+<hr>
+<br><br><br>
+
+<angular-dispensing-ui-table gridColumns="1fr 2fr 1fr">
+  <div>SPHERE</div>
+  <div>CYLINDER</div>
+  <div>AXIS</div>
+
+  <div>0</div>
+  <div>0</div>
+  <div>0</div>
+</angular-dispensing-ui-table>
+
+<br><br><br>
+<hr>
+<br><br><br>
+
+<angular-dispensing-ui-table gridColumns="1fr 1fr 1fr 1fr">
+  <angular-dispensing-ui-table-header></angular-dispensing-ui-table-header>
+  <angular-dispensing-ui-table-header>Spherical</angular-dispensing-ui-table-header>
+  <angular-dispensing-ui-table-header>Cylindrical</angular-dispensing-ui-table-header>
+  <angular-dispensing-ui-table-header>Axial</angular-dispensing-ui-table-header>
+
+  <angular-dispensing-ui-table-row-header>Ordered</angular-dispensing-ui-table-row-header>
+  <angular-dispensing-ui-table-cell-number>1.0</angular-dispensing-ui-table-cell-number>
+  <angular-dispensing-ui-table-cell-number>3.0</angular-dispensing-ui-table-cell-number>
+  <angular-dispensing-ui-table-cell-number>5.0</angular-dispensing-ui-table-cell-number>
+
+  <angular-dispensing-ui-table-row-header>Measured</angular-dispensing-ui-table-row-header>
+  <angular-dispensing-ui-table-cell-number>1.0</angular-dispensing-ui-table-cell-number>
+  <angular-dispensing-ui-table-cell-number>3.0</angular-dispensing-ui-table-cell-number>
+  <angular-dispensing-ui-table-cell-number>5.0</angular-dispensing-ui-table-cell-number>
+
+</angular-dispensing-ui-table>
+
+<br><br><br>
+<hr>
+<br><br><br>
+
+<angular-dispensing-ui-table gridColumns="1fr 1fr 1fr 1fr 1fr">
+  <angular-dispensing-ui-table-header>Review Id</angular-dispensing-ui-table-header>
+  <angular-dispensing-ui-table-header>Lens Pair Id</angular-dispensing-ui-table-header>
+  <angular-dispensing-ui-table-header>Status</angular-dispensing-ui-table-header>
+  <angular-dispensing-ui-table-header>Published at</angular-dispensing-ui-table-header>
+  <angular-dispensing-ui-table-header>Concluded at</angular-dispensing-ui-table-header>
+
+  <ng-template ngFor let-auditEntry [ngForOf]="auditEntries">
+    <angular-dispensing-ui-table-cell-number>{{auditEntry.id}}</angular-dispensing-ui-table-cell-number>
+    <angular-dispensing-ui-table-cell-number>{{auditEntry.lensPairId}}</angular-dispensing-ui-table-cell-number>
+    <angular-dispensing-ui-table-cell-number>{{auditEntry.status}}</angular-dispensing-ui-table-cell-number>
+    <angular-dispensing-ui-table-cell-number>{{auditEntry.publishedAt}}</angular-dispensing-ui-table-cell-number>
+    <angular-dispensing-ui-table-cell-number>{{auditEntry.concludedAt}}</angular-dispensing-ui-table-cell-number>
+  </ng-template>
+
+</angular-dispensing-ui-table>
+
+<router-outlet></router-outlet>

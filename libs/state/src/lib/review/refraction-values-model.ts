@@ -1,7 +1,7 @@
 type Diopter = number;
 type Degree = number;
 
-export interface RefractionValues {
+export interface RefractionValuesModel {
   sphericalMeasurement: Diopter;
   cylindricalMeasurement: Diopter;
   axialMeasurement: Degree;

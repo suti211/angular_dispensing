@@ -1,4 +1,4 @@
-export interface OrderDetails {
+export interface OrderDetailsModel {
   id: string;
   leftOpc: string;
   rightOpc: string;

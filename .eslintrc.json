@@ -22,7 +22,7 @@
               },
               {
                 "sourceTag": "scope:business",
-                "onlyDependOnLibsWithTags": ["scope:business", "scope:state"]
+                "onlyDependOnLibsWithTags": ["scope:state"]
               },
               {
                 "sourceTag": "scope:state",

@@ -1,11 +1,26 @@
 import {Injectable} from '@angular/core';
 import {Observable, of} from 'rxjs';
 import {Review} from './review';
+import {Store} from '@ngxs/store';
+import {GlobalState} from '@angular-dispensing/state';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ReviewService {
+
+  public constructor(private readonly store: Store) {
+
+  }
+
+  // public showNextFromState(): Observable<Review> {
+  //   const lockedItem$ = this.store.select(state => state.lockedItem);
+  //   return this.store.dispatch(new FetchNextReview());
+  // }
+
+  public showAuditEntries(): Observable<Array<Review>> {
+    return this.store.select((state: GlobalState) => state.archives.entries);
+  }
 
   public showNext(): Observable<Review> {
     return of({
